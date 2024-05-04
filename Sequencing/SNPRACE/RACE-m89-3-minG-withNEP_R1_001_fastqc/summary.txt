@@ -1,0 +1,11 @@
+PASS	Basic Statistics	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+PASS	Per base sequence quality	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+WARN	Per tile sequence quality	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+PASS	Per sequence quality scores	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+FAIL	Per base sequence content	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+FAIL	Per sequence GC content	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+PASS	Per base N content	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+PASS	Sequence Length Distribution	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+FAIL	Sequence Duplication Levels	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+FAIL	Overrepresented sequences	RACE-m89-3-minG-withNEP_R1_001.fastq.gz
+PASS	Adapter Content	RACE-m89-3-minG-withNEP_R1_001.fastq.gz

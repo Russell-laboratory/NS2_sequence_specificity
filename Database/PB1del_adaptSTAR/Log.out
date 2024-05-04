@@ -1,0 +1,57 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-03-19T08:38:59+0000 :/opt/conda/conda-bld/star_1710837244939/work/source
+##### Command Line:
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode genomeGenerate --runThreadN 1 --genomeDir Database/PB1del_adaptSTAR --genomeFastaFiles Database/PB1del_adapt.fa --genomeSAindexNbases 3
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runMode                       genomeGenerate        ~RE-DEFINED
+runThreadN                    1     ~RE-DEFINED
+genomeDir                     Database/PB1del_adaptSTAR     ~RE-DEFINED
+genomeFastaFiles              Database/PB1del_adapt.fa        ~RE-DEFINED
+genomeSAindexNbases           3     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate   
+runThreadN                        1
+genomeDir                         Database/PB1del_adaptSTAR
+genomeFastaFiles                  Database/PB1del_adapt.fa   
+genomeSAindexNbases               3
+
+-------------------------------
+##### Final effective command line:
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 1   --genomeDir Database/PB1del_adaptSTAR   --genomeFastaFiles Database/PB1del_adapt.fa      --genomeSAindexNbases 3
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+--genomeDir directory created: Database/PB1del_adaptSTAR/
+May 03 19:19:18 ... starting to generate Genome files
+Database/PB1del_adapt.fa : chr # 0  "PB1del" chrStart: 0
+Chromosome sequence lengths: 
+PB1del	591
+Genome sequence total length = 591
+Genome size with padding = 262144
+Estimated genome size with padding and SJs: total=genome+SJ=201262144 = 262144 + 201000000
+GstrandBit=32
+Number of SA indices: 1182
+May 03 19:19:18 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 1;   chunks size limit: 18599685304 bytes
+May 03 19:19:18 ... sorting Suffix Array chunks and saving them to disk...
+Writing 9456 bytes into Database/PB1del_adaptSTAR//SA_0 ; empty space on disk = 2075774950555648 bytes ... done
+May 03 19:19:18 ... loading chunks from disk, packing SA...
+May 03 19:19:18 ... finished generating suffix array
+May 03 19:19:18 ... generating Suffix Array index
+May 03 19:19:18 ... completed Suffix Array index
+May 03 19:19:18 ... writing Genome to disk ...
+Writing 262144 bytes into Database/PB1del_adaptSTAR//Genome ; empty space on disk = 2075774950555648 bytes ... done
+SA size in bytes: 4879
+May 03 19:19:18 ... writing Suffix Array to disk ...
+Writing 4879 bytes into Database/PB1del_adaptSTAR//SA ; empty space on disk = 2075774950555648 bytes ... done
+May 03 19:19:18 ... writing SAindex to disk
+Writing 8 bytes into Database/PB1del_adaptSTAR//SAindex ; empty space on disk = 2075774950555648 bytes ... done
+Writing 32 bytes into Database/PB1del_adaptSTAR//SAindex ; empty space on disk = 2075774950555648 bytes ... done
+Writing 371 bytes into Database/PB1del_adaptSTAR//SAindex ; empty space on disk = 2075774950555648 bytes ... done
+May 03 19:19:18 ..... finished successfully
+DONE: Genome generation, EXITING

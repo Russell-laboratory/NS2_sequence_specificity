@@ -1,0 +1,10 @@
+TrimmomaticPE: Started with arguments:
+ -threads 4 -phred33 Sequencing/SNPamplicon/subAmp-m89-3-minG-withNEP_R1_001.fastq.gz Sequencing/SNPamplicon/subAmp-m89-3-minG-withNEP_R2_001.fastq.gz Sequencing/SNPamplicon/trimmed_reads//subAmp-m89-3-minG-withNEP_R1_001.fastq.gz Sequencing/SNPamplicon/trimmed_reads//Unpaired_subAmp-m89-3-minG-withNEP_R1_001.fastq.gz Sequencing/SNPamplicon/trimmed_reads//subAmp-m89-3-minG-withNEP_R2_001.fastq.gz Sequencing/SNPamplicon/trimmed_reads//Unpaired_subAmp-m89-3-minG-withNEP_R2_001.fastq.gz ILLUMINACLIP:Database/adapter.fa:2:30:10:2:TRUE LEADING:20 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 9550174 Both Surviving: 9470978 (99.17%) Forward Only Surviving: 51743 (0.54%) Reverse Only Surviving: 24381 (0.26%) Dropped: 3072 (0.03%)
+TrimmomaticPE: Completed successfully
