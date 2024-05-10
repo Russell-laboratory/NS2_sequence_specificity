@@ -1,0 +1,7 @@
+	/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 2 --genomeDir Database/PB1del_adaptSTAR --readFilesIn Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-2-minG-plas_R1_001.fastq Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-2-minG-plas_R2_001.fastq --outFileNamePrefix Results/STARalignSNPRACE/plas-2 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
+	STAR version: 2.7.11b   compiled: 2024-03-19T08:38:59+0000 :/opt/conda/conda-bld/star_1710837244939/work/source
+May 09 12:42:21 ..... started STAR run
+May 09 12:42:21 ..... loading genome
+May 09 12:42:21 ..... started mapping
+May 09 12:54:15 ..... finished mapping
+May 09 12:54:15 ..... finished successfully

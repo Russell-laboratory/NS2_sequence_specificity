@@ -1,0 +1,91 @@
+STAR version=2.7.11b
+STAR compilation time,server,dir=2024-03-19T08:38:59+0000 :/opt/conda/conda-bld/star_1710837244939/work/source
+##### Command Line:
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 2 --genomeDir Database/PB1del_adaptSTAR --readFilesIn Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R2_001.fastq Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R1_001.fastq --outFileNamePrefix Results/STARalignSNPRACE/noNEP-3 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 Results/STARalignSNPRACE/noNEP-3
+###### All USER parameters from Command Line:
+runMode                       alignReads        ~RE-DEFINED
+runThreadN                    2     ~RE-DEFINED
+genomeDir                     Database/PB1del_adaptSTAR     ~RE-DEFINED
+readFilesIn                   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R2_001.fastq   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R1_001.fastq        ~RE-DEFINED
+outFileNamePrefix             Results/STARalignSNPRACE/noNEP-3     ~RE-DEFINED
+outSAMtype                    BAM   Unsorted        ~RE-DEFINED
+alignIntronMax                1     ~RE-DEFINED
+alignEndsType                 EndToEnd     ~RE-DEFINED
+outFilterMismatchNmax         999     ~RE-DEFINED
+outFilterMismatchNoverReadLmax0.1     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           alignReads   
+runThreadN                        2
+genomeDir                         Database/PB1del_adaptSTAR
+readFilesIn                       Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R2_001.fastq   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R1_001.fastq   
+outFileNamePrefix                 Results/STARalignSNPRACE/noNEP-3
+outSAMtype                        BAM   Unsorted   
+outFilterMismatchNmax             999
+outFilterMismatchNoverReadLmax    0.1
+alignIntronMax                    1
+alignEndsType                     EndToEnd
+
+-------------------------------
+##### Final effective command line:
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2   --runMode alignReads      --runThreadN 2   --genomeDir Database/PB1del_adaptSTAR   --readFilesIn Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R2_001.fastq   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-noNEP_R1_001.fastq      --outFileNamePrefix Results/STARalignSNPRACE/noNEP-3   --outSAMtype BAM   Unsorted      --outFilterMismatchNmax 999   --outFilterMismatchNoverReadLmax 0.1   --alignIntronMax 1   --alignEndsType EndToEnd
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+Reading genome generation parameters:
+### /tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2   --runMode genomeGenerate      --runThreadN 1   --genomeDir Database/PB1del_adaptSTAR   --genomeFastaFiles Database/PB1del_adapt.fa      --genomeSAindexNbases 3
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              Database/PB1del_adapt.fa        ~RE-DEFINED
+genomeSAindexNbases           3     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  0     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   -     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               262144   4879        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	PB1del	591	0
+Started loading the genome: Thu May  9 12:57:21 2024
+
+Genome: size given as a parameter = 262144
+SA: size given as a parameter = 4879
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=3  nSAi=84
+nGenome=262144;  nSAbyte=4879
+GstrandBit=32   SA number of indices=1182
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 262144 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 262144 bytes
+SA file size: 4879 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 4879 bytes
+Loading SAindex ... done: 411 bytes
+Finished loading the genome: Thu May  9 12:57:21 2024
+
+To accommodate alignIntronMax=1 redefined winBinNbits=8
+To accommodate alignIntronMax=1 and alignMatesGapMax=0, redefined winFlankNbins=1 and winAnchorDistNbins=2
+Created thread # 1
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #1
+Completed: thread #0
+Joined thread # 1
+May 09 13:03:20 ..... finished mapping
+RAM after mapping:
+VmPeak:	  448648 kB; VmSize:	  379264 kB; VmHWM:	  309168 kB; VmRSS:	  304988 kB; 
+RAM after freeing genome index memory:
+VmPeak:	  448648 kB; VmSize:	  379004 kB; VmHWM:	  309168 kB; VmRSS:	  304728 kB; 
+ALL DONE!
