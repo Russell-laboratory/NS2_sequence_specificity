@@ -1,14 +1,14 @@
 STAR version=2.7.11b
 STAR compilation time,server,dir=2024-03-19T08:38:59+0000 :/opt/conda/conda-bld/star_1710837244939/work/source
 ##### Command Line:
-/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 9 --genomeDir Database/PB1del_adapt_TSO --readFilesIn Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R2_001.fastq Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R1_001.fastq --outFileNamePrefix Results/STARalignSNPRACE/withNEP-3 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 6 --genomeDir Database/PB1del_adapt_TSO --readFilesIn Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R2_001_uncapped.fastq Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R1_001_uncapped.fastq --outFileNamePrefix Results/STARalignSNPRACE/withNEP-3 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
 ##### Initial USER parameters from Command Line:
 outFileNamePrefix                 Results/STARalignSNPRACE/withNEP-3
 ###### All USER parameters from Command Line:
 runMode                       alignReads        ~RE-DEFINED
-runThreadN                    9     ~RE-DEFINED
+runThreadN                    6     ~RE-DEFINED
 genomeDir                     Database/PB1del_adapt_TSO     ~RE-DEFINED
-readFilesIn                   Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R2_001.fastq   Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R1_001.fastq        ~RE-DEFINED
+readFilesIn                   Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R2_001_uncapped.fastq   Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R1_001_uncapped.fastq        ~RE-DEFINED
 outFileNamePrefix             Results/STARalignSNPRACE/withNEP-3     ~RE-DEFINED
 outSAMtype                    BAM   Unsorted        ~RE-DEFINED
 alignIntronMax                1     ~RE-DEFINED
@@ -19,9 +19,9 @@ outFilterMismatchNoverReadLmax0.1     ~RE-DEFINED
 
 ##### Final user re-defined parameters-----------------:
 runMode                           alignReads   
-runThreadN                        9
+runThreadN                        6
 genomeDir                         Database/PB1del_adapt_TSO
-readFilesIn                       Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R2_001.fastq   Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R1_001.fastq   
+readFilesIn                       Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R2_001_uncapped.fastq   Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R1_001_uncapped.fastq   
 outFileNamePrefix                 Results/STARalignSNPRACE/withNEP-3
 outSAMtype                        BAM   Unsorted   
 outFilterMismatchNmax             999
@@ -31,7 +31,7 @@ alignEndsType                     EndToEnd
 
 -------------------------------
 ##### Final effective command line:
-/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2   --runMode alignReads      --runThreadN 9   --genomeDir Database/PB1del_adapt_TSO   --readFilesIn Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R2_001.fastq   Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-withNEP_R1_001.fastq      --outFileNamePrefix Results/STARalignSNPRACE/withNEP-3   --outSAMtype BAM   Unsorted      --outFilterMismatchNmax 999   --outFilterMismatchNoverReadLmax 0.1   --alignIntronMax 1   --alignEndsType EndToEnd
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2   --runMode alignReads      --runThreadN 6   --genomeDir Database/PB1del_adapt_TSO   --readFilesIn Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R2_001_uncapped.fastq   Sequencing/SNPRACE/RACE-m89-3-minG-withNEP_R1_001_uncapped.fastq      --outFileNamePrefix Results/STARalignSNPRACE/withNEP-3   --outSAMtype BAM   Unsorted      --outFilterMismatchNmax 999   --outFilterMismatchNoverReadLmax 0.1   --alignIntronMax 1   --alignEndsType EndToEnd
 ----------------------------------------
 
 Number of fastq files for each mate = 1
@@ -60,7 +60,7 @@ genomeFileSizes               262144   5135        ~RE-DEFINED
 Genome version is compatible with current STAR
 Number of real (reference) chromosomes= 1
 1	PB1del	622	0
-Started loading the genome: Thu May  9 16:47:21 2024
+Started loading the genome: Thu Jun 20 15:24:00 2024
 
 Genome: size given as a parameter = 262144
 SA: size given as a parameter = 5135
@@ -74,7 +74,7 @@ Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 262144 bytes
 SA file size: 5135 bytes; state: good=1 eof=0 fail=0 bad=0
 Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 5135 bytes
 Loading SAindex ... done: 411 bytes
-Finished loading the genome: Thu May  9 16:47:21 2024
+Finished loading the genome: Thu Jun 20 15:24:00 2024
 
 To accommodate alignIntronMax=1 redefined winBinNbits=8
 To accommodate alignIntronMax=1 and alignMatesGapMax=0, redefined winFlankNbins=1 and winAnchorDistNbins=2
@@ -83,30 +83,21 @@ Created thread # 2
 Created thread # 3
 Created thread # 4
 Created thread # 5
-Created thread # 6
-Created thread # 7
-Created thread # 8
-Thread #6 end of input stream, nextChar=-1
-Completed: thread #0
-Completed: thread #6
-Completed: thread #3
-Completed: thread #4
-Completed: thread #1
-Joined thread # 1
+Thread #3 end of input stream, nextChar=-1
 Completed: thread #5
-Completed: thread #7
-Completed: thread #8
+Completed: thread #1
+Completed: thread #4
+Completed: thread #0
+Joined thread # 1
 Completed: thread #2
 Joined thread # 2
+Completed: thread #3
 Joined thread # 3
 Joined thread # 4
 Joined thread # 5
-Joined thread # 6
-Joined thread # 7
-Joined thread # 8
-May 09 16:47:48 ..... finished mapping
+Jun 20 15:24:35 ..... finished mapping
 RAM after mapping:
-VmPeak:	 1912868 kB; VmSize:	 1908636 kB; VmHWM:	 1355768 kB; VmRSS:	 1348344 kB; 
+VmPeak:	 1257424 kB; VmSize:	 1253192 kB; VmHWM:	  906088 kB; VmRSS:	  901212 kB; 
 RAM after freeing genome index memory:
-VmPeak:	 1912868 kB; VmSize:	 1908376 kB; VmHWM:	 1355768 kB; VmRSS:	 1348084 kB; 
+VmPeak:	 1257424 kB; VmSize:	 1252932 kB; VmHWM:	  906088 kB; VmRSS:	  900952 kB; 
 ALL DONE!

@@ -1,0 +1,10 @@
+TrimmomaticPE: Started with arguments:
+ -threads 6 -phred33 Sequencing/MG/MMMg1_R1_001.fastq.gz Sequencing/MG/MMMg1_R2_001.fastq.gz Sequencing/MG/trimmed_reads//MMMg1_R1_001.fastq.gz Sequencing/MG/trimmed_reads//Unpaired_MMMg1_R1_001.fastq.gz Sequencing/MG/trimmed_reads//MMMg1_R2_001.fastq.gz Sequencing/MG/trimmed_reads//Unpaired_MMMg1_R2_001.fastq.gz ILLUMINACLIP:Database/adapter.fa:2:30:10:2:TRUE LEADING:20 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
+Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
+ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 13804155 Both Surviving: 13603642 (98.55%) Forward Only Surviving: 172948 (1.25%) Reverse Only Surviving: 22691 (0.16%) Dropped: 4874 (0.04%)
+TrimmomaticPE: Completed successfully

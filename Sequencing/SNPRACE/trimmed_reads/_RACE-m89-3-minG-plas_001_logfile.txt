@@ -1,10 +1,10 @@
 TrimmomaticPE: Started with arguments:
- -threads 4 -phred33 Sequencing/SNPRACE/RACE-m89-3-minG-plas_R1_001.fastq.gz Sequencing/SNPRACE/RACE-m89-3-minG-plas_R2_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//RACE-m89-3-minG-plas_R1_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//Unpaired_RACE-m89-3-minG-plas_R1_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//RACE-m89-3-minG-plas_R2_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//Unpaired_RACE-m89-3-minG-plas_R2_001.fastq.gz ILLUMINACLIP:Database/adapter.fa:2:30:10:2:TRUE LEADING:20 SLIDINGWINDOW:4:15 MINLEN:36
+ -threads 6 -phred33 Sequencing/SNPRACE/RACE-m89-3-minG-plas_R1_001.fastq.gz Sequencing/SNPRACE/RACE-m89-3-minG-plas_R2_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//RACE-m89-3-minG-plas_R1_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//Unpaired_RACE-m89-3-minG-plas_R1_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//RACE-m89-3-minG-plas_R2_001.fastq.gz Sequencing/SNPRACE/trimmed_reads//Unpaired_RACE-m89-3-minG-plas_R2_001.fastq.gz ILLUMINACLIP:Database/adapter.fa:2:30:10:2:TRUE LEADING:20 SLIDINGWINDOW:4:15 MINLEN:36
 Using PrefixPair: 'AGATGTGTATAAGAGACAG' and 'AGATGTGTATAAGAGACAG'
 Using Long Clipping Sequence: 'GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG'
 Using Long Clipping Sequence: 'TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG'
 Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTCCGAGCCCACGAGAC'
 Using Long Clipping Sequence: 'CTGTCTCTTATACACATCTGACGCTGCCGACGA'
 ILLUMINACLIP: Using 1 prefix pairs, 4 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
-Input Read Pairs: 393982 Both Surviving: 384599 (97.62%) Forward Only Surviving: 8998 (2.28%) Reverse Only Surviving: 332 (0.08%) Dropped: 53 (0.01%)
+Input Read Pairs: 3793575 Both Surviving: 3595005 (94.77%) Forward Only Surviving: 188544 (4.97%) Reverse Only Surviving: 6453 (0.17%) Dropped: 3573 (0.09%)
 TrimmomaticPE: Completed successfully

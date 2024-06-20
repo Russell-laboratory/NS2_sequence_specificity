@@ -1,7 +1,7 @@
-	/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 9 --genomeDir Database/PB1del_adapt_TSO --readFilesIn Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-plas_R1_001.fastq Sequencing/SNPRACE/trimmed_reads/RACE-m89-3-minG-plas_R2_001.fastq --outFileNamePrefix Results/STARalignSNPRACE/plas-3 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
+	/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 6 --genomeDir Database/ampliseqplas --readFilesIn Sequencing/SNPRACE/RACE-m89-3-minG-plas_R2_001_uncapped.fastq Sequencing/SNPRACE/RACE-m89-3-minG-plas_R1_001_uncapped.fastq --outFileNamePrefix Results/STARalignSNPRACE/plas-3 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
 	STAR version: 2.7.11b   compiled: 2024-03-19T08:38:59+0000 :/opt/conda/conda-bld/star_1710837244939/work/source
-May 09 16:46:11 ..... started STAR run
-May 09 16:46:11 ..... loading genome
-May 09 16:46:11 ..... started mapping
-May 09 16:47:15 ..... finished mapping
-May 09 16:47:15 ..... finished successfully
+Jun 20 15:22:07 ..... started STAR run
+Jun 20 15:22:07 ..... loading genome
+Jun 20 15:22:07 ..... started mapping
+Jun 20 15:24:00 ..... finished mapping
+Jun 20 15:24:00 ..... finished successfully

@@ -1,0 +1,11 @@
+PASS	Basic Statistics	MMMg2_R1_001.fastq.gz
+PASS	Per base sequence quality	MMMg2_R1_001.fastq.gz
+WARN	Per tile sequence quality	MMMg2_R1_001.fastq.gz
+PASS	Per sequence quality scores	MMMg2_R1_001.fastq.gz
+FAIL	Per base sequence content	MMMg2_R1_001.fastq.gz
+FAIL	Per sequence GC content	MMMg2_R1_001.fastq.gz
+PASS	Per base N content	MMMg2_R1_001.fastq.gz
+PASS	Sequence Length Distribution	MMMg2_R1_001.fastq.gz
+FAIL	Sequence Duplication Levels	MMMg2_R1_001.fastq.gz
+FAIL	Overrepresented sequences	MMMg2_R1_001.fastq.gz
+PASS	Adapter Content	MMMg2_R1_001.fastq.gz

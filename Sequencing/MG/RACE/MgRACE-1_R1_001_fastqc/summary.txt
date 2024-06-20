@@ -1,0 +1,11 @@
+PASS	Basic Statistics	MgRACE-1_R1_001.fastq.gz
+PASS	Per base sequence quality	MgRACE-1_R1_001.fastq.gz
+FAIL	Per tile sequence quality	MgRACE-1_R1_001.fastq.gz
+PASS	Per sequence quality scores	MgRACE-1_R1_001.fastq.gz
+FAIL	Per base sequence content	MgRACE-1_R1_001.fastq.gz
+FAIL	Per sequence GC content	MgRACE-1_R1_001.fastq.gz
+PASS	Per base N content	MgRACE-1_R1_001.fastq.gz
+PASS	Sequence Length Distribution	MgRACE-1_R1_001.fastq.gz
+FAIL	Sequence Duplication Levels	MgRACE-1_R1_001.fastq.gz
+FAIL	Overrepresented sequences	MgRACE-1_R1_001.fastq.gz
+FAIL	Adapter Content	MgRACE-1_R1_001.fastq.gz
