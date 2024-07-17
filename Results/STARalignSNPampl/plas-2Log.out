@@ -83,3 +83,21 @@ Created thread # 2
 Created thread # 3
 Created thread # 4
 Created thread # 5
+Thread #5 end of input stream, nextChar=-1
+Completed: thread #4
+Completed: thread #2
+Completed: thread #5
+Completed: thread #1
+Completed: thread #3
+Completed: thread #0
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Jun 20 16:40:06 ..... finished mapping
+RAM after mapping:
+VmPeak:	 1257424 kB; VmSize:	 1253192 kB; VmHWM:	  906424 kB; VmRSS:	  901356 kB; 
+RAM after freeing genome index memory:
+VmPeak:	 1257424 kB; VmSize:	 1252932 kB; VmHWM:	  906424 kB; VmRSS:	  901096 kB; 
+ALL DONE!

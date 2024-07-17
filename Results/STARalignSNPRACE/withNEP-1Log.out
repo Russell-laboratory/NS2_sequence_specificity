@@ -60,7 +60,7 @@ genomeFileSizes               262144   5135        ~RE-DEFINED
 Genome version is compatible with current STAR
 Number of real (reference) chromosomes= 1
 1	PB1del	622	0
-Started loading the genome: Thu Jun 20 15:17:55 2024
+Started loading the genome: Fri Jun 21 09:27:41 2024
 
 Genome: size given as a parameter = 262144
 SA: size given as a parameter = 5135
@@ -74,7 +74,7 @@ Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 262144 bytes
 SA file size: 5135 bytes; state: good=1 eof=0 fail=0 bad=0
 Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 5135 bytes
 Loading SAindex ... done: 411 bytes
-Finished loading the genome: Thu Jun 20 15:17:55 2024
+Finished loading the genome: Fri Jun 21 09:27:41 2024
 
 To accommodate alignIntronMax=1 redefined winBinNbits=8
 To accommodate alignIntronMax=1 and alignMatesGapMax=0, redefined winFlankNbins=1 and winAnchorDistNbins=2
@@ -83,21 +83,21 @@ Created thread # 2
 Created thread # 3
 Created thread # 4
 Created thread # 5
-Thread #5 end of input stream, nextChar=-1
-Completed: thread #0
-Completed: thread #4
+Thread #2 end of input stream, nextChar=-1
 Completed: thread #5
-Completed: thread #3
-Completed: thread #1
-Joined thread # 1
+Completed: thread #4
 Completed: thread #2
+Completed: thread #1
+Completed: thread #0
+Joined thread # 1
 Joined thread # 2
+Completed: thread #3
 Joined thread # 3
 Joined thread # 4
 Joined thread # 5
-Jun 20 15:18:29 ..... finished mapping
+Jun 21 09:28:13 ..... finished mapping
 RAM after mapping:
-VmPeak:	 1322572 kB; VmSize:	 1253192 kB; VmHWM:	  908088 kB; VmRSS:	  901184 kB; 
+VmPeak:	 1257424 kB; VmSize:	 1253192 kB; VmHWM:	  906060 kB; VmRSS:	  901184 kB; 
 RAM after freeing genome index memory:
-VmPeak:	 1322572 kB; VmSize:	 1252932 kB; VmHWM:	  908088 kB; VmRSS:	  900924 kB; 
+VmPeak:	 1257424 kB; VmSize:	 1252932 kB; VmHWM:	  906060 kB; VmRSS:	  900924 kB; 
 ALL DONE!

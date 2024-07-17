@@ -1,12 +1,12 @@
 STAR version=2.7.11b
 STAR compilation time,server,dir=2024-03-19T08:38:59+0000 :/opt/conda/conda-bld/star_1710837244939/work/source
 ##### Command Line:
-/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 4 --genomeDir Database/PB1del_adaptSTAR --readFilesIn Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R1_001.fastq Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R2_001.fastq --outFileNamePrefix Results/STARalignSNPampl/withNEP-3 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2 --runMode alignReads --runThreadN 6 --genomeDir Database/PB1del_adaptSTAR --readFilesIn Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R1_001.fastq Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R2_001.fastq --outFileNamePrefix Results/STARalignSNPampl/withNEP-3 --outSAMtype BAM Unsorted --alignIntronMax 1 --alignEndsType EndToEnd --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.1
 ##### Initial USER parameters from Command Line:
 outFileNamePrefix                 Results/STARalignSNPampl/withNEP-3
 ###### All USER parameters from Command Line:
 runMode                       alignReads        ~RE-DEFINED
-runThreadN                    4     ~RE-DEFINED
+runThreadN                    6     ~RE-DEFINED
 genomeDir                     Database/PB1del_adaptSTAR     ~RE-DEFINED
 readFilesIn                   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R1_001.fastq   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R2_001.fastq        ~RE-DEFINED
 outFileNamePrefix             Results/STARalignSNPampl/withNEP-3     ~RE-DEFINED
@@ -19,7 +19,7 @@ outFilterMismatchNoverReadLmax0.1     ~RE-DEFINED
 
 ##### Final user re-defined parameters-----------------:
 runMode                           alignReads   
-runThreadN                        4
+runThreadN                        6
 genomeDir                         Database/PB1del_adaptSTAR
 readFilesIn                       Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R1_001.fastq   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R2_001.fastq   
 outFileNamePrefix                 Results/STARalignSNPampl/withNEP-3
@@ -31,7 +31,7 @@ alignEndsType                     EndToEnd
 
 -------------------------------
 ##### Final effective command line:
-/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2   --runMode alignReads      --runThreadN 4   --genomeDir Database/PB1del_adaptSTAR   --readFilesIn Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R1_001.fastq   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R2_001.fastq      --outFileNamePrefix Results/STARalignSNPampl/withNEP-3   --outSAMtype BAM   Unsorted      --outFilterMismatchNmax 999   --outFilterMismatchNoverReadLmax 0.1   --alignIntronMax 1   --alignEndsType EndToEnd
+/tscc/nfs/home/a5russell/mambaforge/envs/NEP/bin/STAR-avx2   --runMode alignReads      --runThreadN 6   --genomeDir Database/PB1del_adaptSTAR   --readFilesIn Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R1_001.fastq   Sequencing/SNPamplicon/trimmed_reads/subAmp-m89-3-minG-withNEP_R2_001.fastq      --outFileNamePrefix Results/STARalignSNPampl/withNEP-3   --outSAMtype BAM   Unsorted      --outFilterMismatchNmax 999   --outFilterMismatchNoverReadLmax 0.1   --alignIntronMax 1   --alignEndsType EndToEnd
 ----------------------------------------
 
 Number of fastq files for each mate = 1
@@ -60,7 +60,7 @@ genomeFileSizes               262144   4879        ~RE-DEFINED
 Genome version is compatible with current STAR
 Number of real (reference) chromosomes= 1
 1	PB1del	591	0
-Started loading the genome: Fri May  3 20:08:29 2024
+Started loading the genome: Thu Jun 20 16:50:03 2024
 
 Genome: size given as a parameter = 262144
 SA: size given as a parameter = 4879
@@ -74,24 +74,30 @@ Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 262144 bytes
 SA file size: 4879 bytes; state: good=1 eof=0 fail=0 bad=0
 Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 4879 bytes
 Loading SAindex ... done: 411 bytes
-Finished loading the genome: Fri May  3 20:08:29 2024
+Finished loading the genome: Thu Jun 20 16:50:03 2024
 
 To accommodate alignIntronMax=1 redefined winBinNbits=8
 To accommodate alignIntronMax=1 and alignMatesGapMax=0, redefined winFlankNbins=1 and winAnchorDistNbins=2
 Created thread # 1
 Created thread # 2
 Created thread # 3
-Thread #0 end of input stream, nextChar=-1
-Completed: thread #2
+Created thread # 4
+Created thread # 5
+Thread #3 end of input stream, nextChar=-1
+Completed: thread #5
 Completed: thread #0
+Completed: thread #3
 Completed: thread #1
 Joined thread # 1
+Completed: thread #2
 Joined thread # 2
-Completed: thread #3
 Joined thread # 3
-May 03 20:12:08 ..... finished mapping
+Completed: thread #4
+Joined thread # 4
+Joined thread # 5
+Jun 20 16:51:38 ..... finished mapping
 RAM after mapping:
-VmPeak:	  885608 kB; VmSize:	  816228 kB; VmHWM:	  609488 kB; VmRSS:	  603112 kB; 
+VmPeak:	 1322572 kB; VmSize:	 1253192 kB; VmHWM:	  907928 kB; VmRSS:	  901204 kB; 
 RAM after freeing genome index memory:
-VmPeak:	  885608 kB; VmSize:	  815968 kB; VmHWM:	  609488 kB; VmRSS:	  602852 kB; 
+VmPeak:	 1322572 kB; VmSize:	 1252932 kB; VmHWM:	  907928 kB; VmRSS:	  900944 kB; 
 ALL DONE!
