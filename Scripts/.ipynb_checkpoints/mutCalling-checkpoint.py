@@ -315,4 +315,28 @@ def positionalDataSE(*, bamfile, outfile):
         arguments = f"rm -f {tempFile}"
 
 
+def fastaReport(*, inFasta,outfile):
+    #support multiline fasta, although I wish that wasn't a thing
+    with open(inFasta) as infile, open(outfile, 'w') as outfile:
+        positions = {}
+        currSeq = ''
+        for line in infile:
+            line = line[:-1]
+            if line[0] == '>':
+                for position, character in enumerate(currSeq):
+                    position = position + 1
+                    if position not in positions:
+                        positions[position] = {'A':0, 'G':0,'C':0,'T':0}
+                    positions[position][character] += 1
+                currSeq = ''
+            else:
+                currSeq += line
+        outfile.write('\t'.join(['position','A','G','C','T']) + '\n')
+        for position in positions:
+            curr = positions[position]
+            outfile.write('\t'.join([str(position), str(curr['A']), str(curr['G']), str(curr['C']), str(curr['T'])]) + '\n')
+    
+
+
+
         
