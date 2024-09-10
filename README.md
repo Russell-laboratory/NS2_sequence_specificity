@@ -61,6 +61,11 @@ Analysis of diverse PB1 sequences from the NCBI flu database. Preprocessing perf
 
 
 ### SNP mapping and enumeration
-
+Alignment to either PB1_177_385, the same with a TSO (for RACE), or the same with plasmid backbone (RACE plasmid comparison).
+For non-RACE samples sequences processed with trimmomatic prior to alignment to appropriate template with STAR.
+For non-RACE samples, used a quality score cutoff of 30 and enumerated all nucleotides observed at a given position.
+For RACE-samples, reads were processed by removing those with greater than 4 (plasmid comparison) or 5 (RACE) mismatches to the anticipated 5' sequence of either vRNA or cRNA. 
+This step was critical to remove cap-containing sequences. 
+After this curation, STAR was used to map remaining sequences, and nucleotides at each position called with a q-score cutoff of 30 (with additional exclusion of any remaining mapped reads that contained large, heterogeneous, sequences consistent with cap). 
 
 
