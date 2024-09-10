@@ -16,7 +16,7 @@ Data may be found in GEO (including some processed files) at accession GSE276697
 
 The following directories, and their purpose, exist within this repository.
 
-- <b>Database</b>       Repository for influenza genomic sequences and the same with adapters for appropriate mapping as well as sequence with plasmid backbone. A/WSN/1933 BLAST database and STAR indicies provided.
+- <b>Database</b>       Repository for influenza genomic sequences and the same with adapters for appropriate mapping as well as sequence with plasmid backbone. A/WSN/1933 BLAST database and STAR indicies provided. Additionally contains PB1 sequences used for analysis of natural diversity.
 -  <b>Figures</b>       Figures, main and some supplemental.
 - <b>SuppFigures</b>    Additional supplemental figures
 - <b>Results</b>        Final datafiles for analyses after processing. Most critical ones additionally on GEO.
