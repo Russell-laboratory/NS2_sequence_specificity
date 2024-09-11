@@ -56,11 +56,11 @@ Generating figures and interpreting raw data from other notebooks.
 
 Extraction of barcodes from sequencing data of length-variant libraries. Uses code identical to Mendes et al. 2021.
 
-### Natural_diverisity
+### Natural_diverisity.ipynb
 Analysis of diverse PB1 sequences from the NCBI flu database. Preprocessing performed outside of this notebook included CD-HIT and manual curation.
 
 
-### SNP mapping and enumeration
+### SNP mapping and enumeration.ipynb
 Alignment to either PB1_177_385, the same with a TSO (for RACE), or the same with plasmid backbone (RACE plasmid comparison).
 For non-RACE samples sequences processed with trimmomatic prior to alignment to appropriate template with STAR.
 For non-RACE samples, used a quality score cutoff of 30 and enumerated all nucleotides observed at a given position.
